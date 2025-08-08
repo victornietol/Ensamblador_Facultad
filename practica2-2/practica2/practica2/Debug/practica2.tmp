@@ -1,0 +1,27 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\MicrochipStudioProyectos\practica2-2\practica2\practica2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Archivos de programas\MicrochipStudio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>D:\Archivos de programas\MicrochipStudio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\MicrochipStudioProyectos\practica2-2\practica2\practica2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Archivos de programas\MicrochipStudio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\MicrochipStudioProyectos\practica2-2\practica2\practica2\Debug\practica2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>practica2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>practica2.map</FILE>
+  <FILE>practica2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <valor><FILE>D:\MicrochipStudioProyectos\practica2-2\practica2\practica2\main.asm</FILE><LINE>15</LINE></valor>
+ </LABELS>
+</ASSEMBLER_INFO>
