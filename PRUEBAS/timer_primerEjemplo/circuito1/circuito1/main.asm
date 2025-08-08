@@ -1,0 +1,41 @@
+;
+; circuito1.asm
+;
+; Created: 09/11/2023 01:01:56 a. m.
+; Author : Victor
+;
+
+
+; Replace with your application code
+		.ORG 0X00
+		RJMP INICIO
+		.ORG 0X20
+		RJMP RSI_T0
+
+INICIO:
+		SEI
+
+		LDI R16, 0X08
+		LDI R17, 0XFF
+		OUT SPH, R16
+		OUT SPL, R17
+
+		OUT DDRD, R17
+
+		CLR R18
+		LDI R19, 0X01
+		LDI R20, 0X0B
+		LDI R21, 0X05
+		STS TIMSK0, R19
+		OUT TCCR0B, R21
+		OUT TCNT0, R20
+		OUT TIFR0, R18
+
+FIN: 
+		RJMP FIN
+
+RSI_T0:
+		INC R18
+		OUT PORTD, R18
+		OUT TCNT0, R20
+		RETI
