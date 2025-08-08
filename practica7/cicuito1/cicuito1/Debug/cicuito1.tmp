@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Archivos de programas\MicrochipStudio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>D:\Archivos de programas\MicrochipStudio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Archivos de programas\MicrochipStudio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\Debug\cicuito1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>cicuito1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>cicuito1.map</FILE>
+  <FILE>cicuito1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <START><FILE>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\main.asm</FILE><LINE>13</LINE></START>
+  <RSI_T0><FILE>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\main.asm</FILE><LINE>31</LINE></RSI_T0>
+  <WAIT><FILE>D:\MicrochipStudioProyectos\practica7\cicuito1\cicuito1\main.asm</FILE><LINE>29</LINE></WAIT>
+ </LABELS>
+</ASSEMBLER_INFO>

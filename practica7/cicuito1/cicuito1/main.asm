@@ -1,0 +1,33 @@
+;
+; cicuito1.asm
+;
+; Created: 23/10/2023 01:29:04 a. m.
+; Author : Victor
+;
+
+
+; Replace with your application code
+		RJMP START
+		.ORG 0X0020
+		RJMP RSI_T0
+START:	
+		SEI
+		LDI R16, 0XFF
+		LDI R17, 0X08
+		OUT DDRB, R16
+		OUT SPH, R17
+		OUT SPL, R16
+		LDI R18, 0X00
+		OUT PORTB, R18
+		LDI R19, 0X05
+		OUT TCCR0B, R19
+		LDI R20, 0X01
+		STS TIMSK0, R20
+		LDI R21, 0X00
+		OUT TCNT0, R21
+
+WAIT: RJMP WAIT
+
+RSI_T0:	INC R18
+		OUT PORTB, R18
+		RETI

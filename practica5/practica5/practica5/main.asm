@@ -1,0 +1,41 @@
+;
+; practica5.asm
+;
+; Created: 07/10/2023 03:18:30 a. m.
+; Author : Victor
+;
+
+
+; Replace with your application code
+		SER R16
+		OUT SPL, R16
+		LDI R17, 0X08
+		OUT SPH, R17
+		OUT DDRD, R16
+		CBI DDRC, 0
+		SBI PORTC, 0
+
+INICIO:
+		CLR R17
+MUESTRA:
+		OUT PORTD, R17
+		RCALL RETARDO
+		SBIS PINC, 0
+		RJMP ASCENDENTE
+		DEC R17
+		RJMP MUESTRA
+ASCENDENTE:
+		INC R17
+		RJMP MUESTRA
+RETARDO:
+		CLR R0
+		CLR R1
+		CLR R2
+A:
+		INC R0
+		CPSE R0, R2
+		RJMP A
+		INC R1
+		CPSE R1, R2
+		RJMP A
+		RET
