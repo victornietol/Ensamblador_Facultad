@@ -1,0 +1,39 @@
+;
+; circuitoRutina.asm
+;
+; Created: 18/10/2023 05:01:46 p. m.
+; Author : Victor
+;
+
+
+; Replace with your application code
+		.ORG 0X0000
+		RJMP INICIO
+		.ORG 0X0002
+		RJMP RSI_INT0
+
+INICIO: SEI
+		LDI R16, 0X08
+		LDI R17, 0XFF
+		OUT SPH, R16
+		OUT SPL, R17
+		
+		CBI PORTD, 2
+		OUT DDRB, R17
+		SBI PORTD, 2
+		
+		LDI R18, 0X00
+		LDI R19, 0X03
+		LDI R20, 0X01
+		OUT EIMSK, R20
+		STS EICRA, R19
+		OUT EIFR, R18
+
+		OUT PORTB, R18
+
+FIN:	RJMP FIN
+
+		RSI_INT0:
+		INC R18
+		OUT PORTB, R18
+		RETI
